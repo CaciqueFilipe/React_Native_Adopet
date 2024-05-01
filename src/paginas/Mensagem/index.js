@@ -5,7 +5,7 @@ import PaginaBase from "../PaginaBase";
 
 export default function Mensagem() {
     const route = useRoute();
-    const { nomePet } = route.params;
+    const { nomePet } = route.params || '';
 
     const [nome, onChangeNome] = React.useState('');
     const [telefone, onChangeTelefone] = React.useState('');
